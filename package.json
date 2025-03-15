@@ -1,0 +1,52 @@
+{
+  "name": "tiny-async-lock",
+  "version": "1.0.0",
+  "description": "A lightweight, promise-based asynchronous lock implementation for TypeScript/JavaScript applications",
+  "author": "victor141516",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.cjs.json",
+    "test": "vitest run",
+    "prepublishOnly": "npm run test && npm run build",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "async",
+    "lock",
+    "mutex",
+    "synchronization",
+    "typescript",
+    "promise"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor141516/tiny-async-lock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victor141516/tiny-async-lock/issues"
+  },
+  "homepage": "https://github.com/victor141516/tiny-async-lock#readme",
+  "devDependencies": {
+    "rimraf": "6.0.1",
+    "typescript": "^5.0.0",
+    "vitest": "3.0.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
