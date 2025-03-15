@@ -1,6 +1,6 @@
 # tiny-async-lock
 
-A lightweight, promise-based asynchronous lock implementation for TypeScript/JavaScript applications.
+A lightweight (520 bytes minified), promise-based asynchronous lock implementation for TypeScript/JavaScript applications.
 
 ## Features
 
